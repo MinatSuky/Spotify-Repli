@@ -103,7 +103,7 @@ export const Losfav = () => {
                     </div>
                     <div className="flex items-center gap-8 mt-5 mx-[2%]">
                         <div className="cursor-pointer" onClick={() => toggleAudioPlayer(0)}>
-                            <div onClick={() => setIcono(!icono)} className="FLECHA bg-green-600 hover:bg-[#23dc67] p-4 rounded-full  ora1 w-fit">
+                            <div onClick={() => setIcono(!icono)} className="FLECHA1 bg-green-600 hover:bg-[#23dc67] p-4 rounded-full  ora1 w-fit">
                                 <img src={icono ? (img1) : (img2)} alt="" width={20} />
                             </div>
                         </div>
