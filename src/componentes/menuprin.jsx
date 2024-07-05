@@ -11,6 +11,11 @@ import the from "../IMGS/thewperfil.jpeg"
 import bat from "../IMGS/batperfil.jpeg"
 import shak from "../IMGS/shakiperfil.jpg"
 import lue from "../IMGS/love.jpeg"
+import wey from "../IMGS/wey.jpeg"
+import dey from "../IMGS/dey.jpeg"
+import judas from "../IMGS/judas.jpeg"
+import vio from "../IMGS/violin.jpeg"
+import your from "../IMGS/your.jpeg"
 import shaa from "../IMGS/shaa.jpeg"
 import yonaa from "../IMGS/yona.jpeg"
 import mal from "../IMGS/mal.jpeg"
@@ -137,19 +142,19 @@ export const MenuPrin = () => {
             <div className="mx-[1%] flex gap-2 justify-center">
             <Slider className="sladerhome" {...settings}>
                 <div onClick={() => toggleAudioPlayer(0)} className="w-[100%]">
-                    <Music names={names[6]} src={"https://goo.su/HxoN"} art={art[2]} />
+                    <Music names={names[6]} src={your} art={art[2]} />
                 </div>
                 <div onClick={() => toggleAudioPlayer(1)} className="w-[100%]">
-                    <Music names={names[7]} src={"https://goo.su/DNNUiYC"} art={art[1]} />
+                    <Music names={names[7]} src={dey} art={art[1]} />
                 </div>
                 <div onClick={() => toggleAudioPlayer(2)} className="w-[100%]">
-                    <Music names={names[8]} src={"https://goo.su/HxoN"} art={art[2]} />
+                    <Music names={names[8]} src={your} art={art[2]} />
                 </div>
                 <div onClick={() => toggleAudioPlayer(3)} className="w-[100%]">
-                    <Music names={names[9]} src={"https://goo.su/f4Zlt5q"} art={art[3]} />
+                    <Music names={names[9]} src={wey} art={art[3]} />
                 </div>
                 <div onClick={() => toggleAudioPlayer(4)} className="w-[100%]">
-                    <Music names={names[10]} src={"https://goo.su/FJdbPQ"} art={art[4]} />
+                    <Music names={names[10]} src={judas} art={art[4]} />
                 </div>
                 <div onClick={() => toggleAudioPlayer(5)} className="w-[100%]">
                     <Music names={names[11]} src={lue} art={art[5]} />
@@ -160,7 +165,7 @@ export const MenuPrin = () => {
             <div className="mx-[1%] flex gap-2 justify-center">
             <Slider className="sladerhome" {...settings}>
                 <div onClick={() => toggleAudioPlayer(6)} className="w-[100%]">
-                    <Music names={names[6]} src={"https://i.scdn.co/image/ab67616d00001e0243629c05af118b2e6531ebd8"} art={art[0]} />
+                    <Music names={names[6]} src={vio} art={art[0]} />
                 </div>
                 <div onClick={() => toggleAudioPlayer(7)} className="w-[100%]">
                     <Music names={names[13]} src={shaa} art={art[6]} />
@@ -181,13 +186,13 @@ export const MenuPrin = () => {
             </div>
 
             <div className="overflow-hidden fixed audicont">
-                {barraAudio === 0 && <AudioPlayer imgaudio={"https://goo.su/HxoN"} names={names[6]} audio={wanna} onEnded={handleEnded} />}
-                {barraAudio === 1 && <AudioPlayer imgaudio={"https://goo.su/DNNUiYC"} names={names[7]} audio={beautiful} onEnded={handleEnded} />}
-                {barraAudio === 2 && <AudioPlayer imgaudio={"https://goo.su/HxoN"} names={names[8]} audio={say} onEnded={handleEnded2} />}
-                {barraAudio === 3 && <AudioPlayer imgaudio={"https://goo.su/f4Zlt5q"} names={names[9]} audio={west} onEnded={handleEnded2} />}
-                {barraAudio === 4 && <AudioPlayer imgaudio={"https://goo.su/FJdbPQ"} names={names[10]} audio={games} onEnded={handleEnded3} />}
+                {barraAudio === 0 && <AudioPlayer imgaudio={your} names={names[6]} audio={wanna} onEnded={handleEnded} />}
+                {barraAudio === 1 && <AudioPlayer imgaudio={dey} names={names[7]} audio={beautiful} onEnded={handleEnded} />}
+                {barraAudio === 2 && <AudioPlayer imgaudio={your} names={names[8]} audio={say} onEnded={handleEnded2} />}
+                {barraAudio === 3 && <AudioPlayer imgaudio={wey} names={names[9]} audio={west} onEnded={handleEnded2} />}
+                {barraAudio === 4 && <AudioPlayer imgaudio={judas} names={names[10]} audio={games} onEnded={handleEnded3} />}
                 {barraAudio === 5 && <AudioPlayer imgaudio={lue} names={names[11]} audio={love} onEnded={handleEnded3} />}
-                {barraAudio === 6 && <AudioPlayer imgaudio={"https://i.scdn.co/image/ab67616d00001e0243629c05af118b2e6531ebd8"} names={names[12]} audio={summe} onEnded={handleEnded4} />}
+                {barraAudio === 6 && <AudioPlayer imgaudio={vio} names={names[12]} audio={summe} onEnded={handleEnded4} />}
                 {barraAudio === 7 && <AudioPlayer imgaudio={shaa} names={names[13]} audio={ciega} onEnded={handleEnded4} />}
                 {barraAudio === 8 && <AudioPlayer imgaudio={yonaa} names={names[14]} audio={yona} onEnded={handleEnded5} />}
                 {barraAudio === 9 && <AudioPlayer imgaudio={mal} names={names[15]} audio={maldicion} onEnded={handleEnded5} />}
