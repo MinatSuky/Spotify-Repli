@@ -15,6 +15,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { BarraPrin } from "../componentes/barraprincipal"
+import { Footer } from "../componentes/footer"
 
 export const LanaPerfil = () => {
 
@@ -326,7 +327,7 @@ export const LanaPerfil = () => {
 
             </div>
 
-            <img className="mt-5" src={img3} alt="" />
+            <Footer/>
         </div>
     )
 }

@@ -16,6 +16,7 @@ import { BarraPrin } from "../componentes/barraprincipal"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import { Footer } from "../componentes/footer"
 
 export const BatPerfil = () => {
 
@@ -317,7 +318,7 @@ export const BatPerfil = () => {
                     </Link>
                 </Slider>
             </div>
-            <img className="mt-5" src={img3} alt="" />
+            <Footer/>
         </div>
     )
 }

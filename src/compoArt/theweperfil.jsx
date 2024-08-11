@@ -11,6 +11,7 @@ import { Link } from "react-router-dom"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import { Footer } from "../componentes/footer"
 
 
 export const ThewPerfil = () => {
@@ -238,7 +239,7 @@ export const ThewPerfil = () => {
                     </div>
                 </div>
             </div>
-            <div className="overflow-hidden fixed z-[1] audicont">
+            <div className="overflow-hidden fixed z-10 audicont">
                 {barraAudio === 0 && <AudioPlayerNex imgaudio={imgaudio[1]} names={names[1]} />}
                 {barraAudio === 1 && <AudioPlayerNex imgaudio={imgaudio[1]} names={names[1]}  />}
                 {barraAudio === 2 && <AudioPlayerNex imgaudio={imgaudio[2]} names={names[2]}  />}
@@ -327,7 +328,7 @@ export const ThewPerfil = () => {
                     </Link>          
                     </Slider>              
             </div>
-            <img className="mt-5" src={img3} alt="" />
+            <Footer/>
         </div>
     )
 }

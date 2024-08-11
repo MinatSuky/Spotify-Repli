@@ -21,6 +21,7 @@ import img1 from "../IMGS/play.png"
 import img2 from "../IMGS/pausa.png"
 import img3 from "../IMGS/Captura de pantalla 2024-06-21 091558.png"
 import { BarraPrin } from "../componentes/barraprincipal"
+import { Footer } from "../componentes/footer"
 
 
 
@@ -554,7 +555,7 @@ export const Historias = () => {
                             <p className="opacity-60 ney">3:56</p>
                         </div>
                     </div>
-                    <img className="mt-5" src={img3} alt="" />
+                    <Footer/>
                 </div>
                 <div className="overflow-hidden fixed z-[1] audicont">
                     {barraAudio === 0 && <AudioPlayer imgaudio={imgaudio[0]} names={names[0]} audio={paque} onEnded={handleEnded} />}

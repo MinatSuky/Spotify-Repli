@@ -11,6 +11,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { Link } from "react-router-dom"
+import { Footer } from "../componentes/footer"
 
 
 export const AdelePerfil = () => {
@@ -327,7 +328,7 @@ export const AdelePerfil = () => {
                     </Link>
                 </Slider>
             </div>
-            <img className="mt-5" src={img3} alt="" />
+            <Footer/>
         </div>
     )
 }

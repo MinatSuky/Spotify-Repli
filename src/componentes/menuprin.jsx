@@ -21,7 +21,6 @@ import yonaa from "../IMGS/yona.jpeg"
 import mal from "../IMGS/mal.jpeg"
 import me from "../IMGS/me.jpeg"
 import vez from "../IMGS/vez.jpeg"
-import img3 from "../IMGS/Captura de pantalla 2024-06-21 091558.png"
 import summe from "../audio/random/i wanna be yours - dramatic violin interlude (1).mp3"
 import wanna from "../audio/random/Arctic Monkeys - I Wanna Be Yours (1).mp3"
 import beautiful from "../audio/random/David Kushner - Daylight (Official Music Video) (1).mp3"
@@ -37,6 +36,7 @@ import rara from "../audio/random/Rara Vez.mp3"
 import { Music } from "./mushome";
 import { useState } from "react";
 import AudioPlayer from "./audioPlayer";
+import { Footer } from "./footer";
 
 
 export const MenuPrin = () => {
@@ -140,52 +140,53 @@ export const MenuPrin = () => {
             </div>
             <p className="mx-[2%] mt-5 font-semibold text-3xl mb-3 text-white ">Podria Gustarte...</p>
             <div className="mx-[1%] flex gap-2 justify-center">
-            <Slider className="sladerhome" {...settings}>
-                <div onClick={() => toggleAudioPlayer(0)} className="w-[100%]">
-                    <Music names={names[6]} src={your} art={art[2]} />
-                </div>
-                <div onClick={() => toggleAudioPlayer(1)} className="w-[100%]">
-                    <Music names={names[7]} src={dey} art={art[1]} />
-                </div>
-                <div onClick={() => toggleAudioPlayer(2)} className="w-[100%]">
-                    <Music names={names[8]} src={your} art={art[2]} />
-                </div>
-                <div onClick={() => toggleAudioPlayer(3)} className="w-[100%]">
-                    <Music names={names[9]} src={wey} art={art[3]} />
-                </div>
-                <div onClick={() => toggleAudioPlayer(4)} className="w-[100%]">
-                    <Music names={names[10]} src={judas} art={art[4]} />
-                </div>
-                <div onClick={() => toggleAudioPlayer(5)} className="w-[100%]">
-                    <Music names={names[11]} src={lue} art={art[5]} />
-                </div>
+                <Slider className="sladerhome" {...settings}>
+                    <div onClick={() => toggleAudioPlayer(0)} className="w-[100%]">
+                        <Music names={names[6]} src={your} art={art[2]} />
+                    </div>
+                    <div onClick={() => toggleAudioPlayer(1)} className="w-[100%]">
+                        <Music names={names[7]} src={dey} art={art[1]} />
+                    </div>
+                    <div onClick={() => toggleAudioPlayer(2)} className="w-[100%]">
+                        <Music names={names[8]} src={your} art={art[2]} />
+                    </div>
+                    <div onClick={() => toggleAudioPlayer(3)} className="w-[100%]">
+                        <Music names={names[9]} src={wey} art={art[3]} />
+                    </div>
+                    <div onClick={() => toggleAudioPlayer(4)} className="w-[100%]">
+                        <Music names={names[10]} src={judas} art={art[4]} />
+                    </div>
+                    <div onClick={() => toggleAudioPlayer(5)} className="w-[100%]">
+                        <Music names={names[11]} src={lue} art={art[5]} />
+                    </div>
                 </Slider>
             </div>
             <p className="mx-[2%] mt-8 font-semibold text-3xl mb-3 text-white ">Populares</p>
             <div className="mx-[1%] flex gap-2 justify-center">
-            <Slider className="sladerhome" {...settings}>
-                <div onClick={() => toggleAudioPlayer(6)} className="w-[100%]">
-                    <Music names={names[6]} src={vio} art={art[0]} />
-                </div>
-                <div onClick={() => toggleAudioPlayer(7)} className="w-[100%]">
-                    <Music names={names[13]} src={shaa} art={art[6]} />
-                </div>
-                <div onClick={() => toggleAudioPlayer(8)} className="w-[100%]">
-                    <Music names={names[14]} src={yonaa} art={art[7]} />
-                </div>
-                <div onClick={() => toggleAudioPlayer(9)} className="w-[100%]">
-                    <Music names={names[15]} src={mal} art={art[8]} />
-                </div>
-                <div onClick={() => toggleAudioPlayer(10)} className="w-[100%]">
-                    <Music names={names[16]} src={me} art={art[9]} />
-                </div>
-                <div onClick={() => toggleAudioPlayer(11)} className="w-[100%]">
-                    <Music names={names[17]} src={vez} art={art[10]} />
-                </div>
+                <Slider className="sladerhome" {...settings}>
+                    <div onClick={() => toggleAudioPlayer(6)} className="w-[100%]">
+                        <Music names={names[6]} src={vio} art={art[0]} />
+                    </div>
+                    <div onClick={() => toggleAudioPlayer(7)} className="w-[100%]">
+                        <Music names={names[13]} src={shaa} art={art[6]} />
+                    </div>
+                    <div onClick={() => toggleAudioPlayer(8)} className="w-[100%]">
+                        <Music names={names[14]} src={yonaa} art={art[7]} />
+                    </div>
+                    <div onClick={() => toggleAudioPlayer(9)} className="w-[100%]">
+                        <Music names={names[15]} src={mal} art={art[8]} />
+                    </div>
+                    <div onClick={() => toggleAudioPlayer(10)} className="w-[100%]">
+                        <Music names={names[16]} src={me} art={art[9]} />
+                    </div>
+                    <div onClick={() => toggleAudioPlayer(11)} className="w-[100%]">
+                        <Music names={names[17]} src={vez} art={art[10]} />
+                    </div>
                 </Slider>
             </div>
 
-            <div className="overflow-hidden fixed audicont">
+
+            <div className="overflow-hidden fixed  audicont">
                 {barraAudio === 0 && <AudioPlayer imgaudio={your} names={names[6]} audio={wanna} onEnded={handleEnded} />}
                 {barraAudio === 1 && <AudioPlayer imgaudio={dey} names={names[7]} audio={beautiful} onEnded={handleEnded} />}
                 {barraAudio === 2 && <AudioPlayer imgaudio={your} names={names[8]} audio={say} onEnded={handleEnded2} />}
@@ -199,7 +200,7 @@ export const MenuPrin = () => {
                 {barraAudio === 10 && <AudioPlayer imgaudio={me} names={names[16]} audio={feel} onEnded={handleEnded6} />}
                 {barraAudio === 11 && <AudioPlayer imgaudio={vez} names={names[17]} audio={rara} />}
             </div>
-            <img className="mt-10" src={img3} alt="" />
+            <Footer/>
         </div>
     )
 }

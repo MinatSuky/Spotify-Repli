@@ -167,5 +167,8 @@ body{
     background-clip: text;
 
 }
-
+/* .slick-track{
+  display: flex;
+  gap: 15px;
+} */
 
