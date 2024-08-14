@@ -78,7 +78,7 @@ export const Lust = () => {
             <div className="padre3 w-[23%] h-[100%] overflow-hidden  BARRALATERAL">
                 <BarraLate />
             </div>
-            <div className="h-[99vh] bg-[#121212] rounded-lg mt-1 overflow-auto hijo">
+            <div className="h-[98.2vh] bg-[#121212] rounded-lg mt-2 overflow-auto hijo">
             <BarraPrin />
                 <div className="fotoborn2 gradi ">
                     <div className="bg-[#305157]  portada p-8 ">

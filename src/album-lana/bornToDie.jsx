@@ -70,7 +70,7 @@ export const Born = () => {
                 <BarraLate />
             </div>
 
-            <div className="h-[99vh] bg-[#121212] rounded-lg mt-1 overflow-auto hijo ">
+            <div className="h-[98.2vh] bg-[#121212] rounded-lg mt-2 overflow-auto hijo ">
                 <BarraPrin />
                 <div className="fotoborn gradi ">
                     <div className="bg-[#49618A]  portada p-8 ">

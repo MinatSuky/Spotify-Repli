@@ -48,6 +48,22 @@
     top: 210px;
 }
 
+.CONTENEDOR1 .FLECHA1 {
+    visibility: hidden;
+}
+
+.CONTENEDOR1:hover .FLECHA1 {
+    visibility: visible;
+    transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    transition-duration: 300ms;
+}
+
+.CONTENEDOR1:hover .FLECHA1 {
+    top: 145px;
+}
+
+
+
 .mas {
     visibility: hidden;
 }
@@ -65,10 +81,7 @@
     transition-delay: 600ms;
 }
 
-.hijo {
-    margin-left: 23%;
-    width: 77%;
-}
+
 
 .slader {
     width: 86%;
@@ -91,6 +104,14 @@
 
 .BARRAPRINCIPAL {
     width: 76.1%;
+}
+.BARRALATERAL{
+    width: 23%;
+}
+.hijo {
+    margin-left: 23%;
+    margin-right: 5px;
+    width: 100%;
 }
 
 .audicont {

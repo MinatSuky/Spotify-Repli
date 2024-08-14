@@ -75,7 +75,7 @@ export const Login = () => {
                     </div>
 
                     <p className="mt-10 text-center">
-                        No Tienes Cuenta
+                        No Tienes Cuenta?
                         <span
                             
                             className="floo cursor-pointer ora2 ml-3 px-3 py-1 rounded-sm font-semibold"

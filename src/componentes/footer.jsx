@@ -1,43 +1,43 @@
 export const Footer = () => {
     return(
-        <footer class="bg-[#121212] text-white py-8 mx-3 flex flex-col items-start mt-28">
+        <footer class="bg-[#121212] text-white py-8 mx-3 flex flex-col items-start mt-28 mb-20">
                 <div class="w-full  mx-auto flex justify-around">
                     <div class="text-left contenedorx">
                         <h2 class="text-lg font-bold mb-2 opacity-85">Empresa</h2>
                         <ul class="list-none space-y-2">
-                            <li><a href="#" class="hover:underline opacity-50">Acerca de</a></li>
-                            <li><a href="#" class="hover:underline opacity-50">Empleo</a></li>
-                            <li><a href="#" class="hover:underline opacity-50">For the Record</a></li>
+                            <li><a href="https://www.spotify.com/co-es/about-us/contact/" class="hover:underline opacity-50">Acerca de</a></li>
+                            <li><a href="https://www.lifeatspotify.com/" class="hover:underline opacity-50">Empleo</a></li>
+                            <li><a href="https://newsroom.spotify.com/" class="hover:underline opacity-50">For the Record</a></li>
                         </ul>
                     </div>
 
                     <div class="text-left mt-0 contenedorx">
                         <h2 class="text-lg font-bold mb-2 opacity-85">Comunidades</h2>
                         <ul class="list-none space-y-2">
-                            <li><a href="#" class="hover:underline opacity-50">Para artistas</a></li>
-                            <li><a href="#" class="hover:underline opacity-50">Desarrolladores</a></li>
-                            <li><a href="#" class="hover:underline opacity-50">Publicidad</a></li>
-                            <li><a href="#" class="hover:underline opacity-50">Inversores</a></li>
-                            <li><a href="#" class="hover:underline opacity-50">Proveedores</a></li>
+                            <li><a href="https://artists.spotify.com/home" class="hover:underline opacity-50">Para artistas</a></li>
+                            <li><a href="https://developer.spotify.com/" class="hover:underline opacity-50">Desarrolladores</a></li>
+                            <li><a href="https://ads.spotify.com/en-US/" class="hover:underline opacity-50">Publicidad</a></li>
+                            <li><a href="https://investors.spotify.com/home/default.aspx" class="hover:underline opacity-50">Inversores</a></li>
+                            <li><a href="https://spotifyforvendors.com/" class="hover:underline opacity-50">Proveedores</a></li>
                         </ul>
                     </div>
 
                     <div class="text-left mt-0 contenedorx">
                         <h2 class="text-lg font-bold mb-2 opacity-85">Enlaces útiles</h2>
                         <ul class="list-none space-y-2">
-                            <li><a href="#" class="hover:underline opacity-50">Asistencia</a></li>
-                            <li><a href="#" class="hover:underline opacity-50">App gratis para móvil</a></li>
+                            <li><a href="https://support.spotify.com/co-es/" class="hover:underline opacity-50">Asistencia</a></li>
+                            <li><a href="https://www.spotify.com/co-es/download/windows/" class="hover:underline opacity-50">App gratis para móvil</a></li>
                         </ul>
                     </div>
 
                     <div class="text-left mt-0 contenedorx">
                         <h2 class="text-lg font-bold mb-2 opacity-85">Planes de Spotify</h2>
                         <ul class="list-none space-y-2">
-                            <li><a href="#" class="hover:underline opacity-50">Premium Individual</a></li>
-                            <li><a href="#" class="hover:underline opacity-50">Premium Duo</a></li>
-                            <li><a href="#" class="hover:underline opacity-50">Premium Familiar</a></li>
-                            <li><a href="#" class="hover:underline opacity-50">Premium para Estudiantes</a></li>
-                            <li><a href="#" class="hover:underline opacity-50">Spotify Free</a></li>
+                            <li><a href="https://www.spotify.com/co-es/premium/?ref=spotifycom_footer_premium_individual" class="hover:underline opacity-50">Premium Individual</a></li>
+                            <li><a href="https://www.spotify.com/co-es/duo/?ref=spotifycom_footer_premium_duo" class="hover:underline opacity-50">Premium Duo</a></li>
+                            <li><a href="https://www.spotify.com/co-es/family/?ref=spotifycom_footer_premium_family" class="hover:underline opacity-50">Premium Familiar</a></li>
+                            <li><a href="https://www.spotify.com/co-es/student/?ref=spotifycom_footer_premium_student" class="hover:underline opacity-50">Premium para Estudiantes</a></li>
+                            <li><a href="https://www.spotify.com/co-es/free/?ref=spotifycom_footer_free" class="hover:underline opacity-50">Spotify Free</a></li>
                         </ul>
                     </div>
 

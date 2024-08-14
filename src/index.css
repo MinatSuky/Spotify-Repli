@@ -167,6 +167,32 @@ body{
     background-clip: text;
 
 }
+.shadow-1{
+  box-shadow: 0px 8px 15px 0px #080808;
+}
+/* Estilo general para la scrollbar */
+::-webkit-scrollbar {
+  width: 15px; /* Ancho de la scrollbar */
+}
+
+/* Fondo de la scrollbar */
+::-webkit-scrollbar-track {
+  background-color: #181818; /* Color de fondo oscuro */
+}
+
+
+/* Color y diseño de la scrollbar */
+::-webkit-scrollbar-thumb {
+  background-color: #2d2e2d; /* Color verde característico de Spotify */
+  border-radius: 4px; /* Bordes redondeados */
+  border: 2px solid #181818; /* Espacio alrededor de la barra */
+}
+
+/* Estilo cuando la scrollbar está activa (hover) */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #424141; /* Un verde más claro al pasar el ratón */
+}
+
 /* .slick-track{
   display: flex;
   gap: 15px;
