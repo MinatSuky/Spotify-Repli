@@ -80,8 +80,8 @@ const AudioPlayer = ({ audio, names, imgaudio, onEnded }) => {
             <div className="audio-controls flex gap-4">
                 <div className="progress-container">
                     <div className='repro2'>
-                        <img className="rounded-lg border ora2" src={imgaudio} alt="" width={50} />
-                        <p className='ney mr-5'>{names}</p>
+                        <img className="rounded borde ora2" src={imgaudio} alt="" width={50} />
+                        <p className='ne mr-10'>{names}</p>
                         <p>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" color="#ffffff"><path d="m14 8l-3.332 3.02c-.89.807-.89 1.153 0 1.96L14 16" /><circle cx="12" cy="12" r="10" /></g></svg>
                         </p>

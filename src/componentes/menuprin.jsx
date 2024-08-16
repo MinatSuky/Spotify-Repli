@@ -21,6 +21,20 @@ import yonaa from "../IMGS/yona.jpeg"
 import mal from "../IMGS/mal.jpeg"
 import me from "../IMGS/me.jpeg"
 import vez from "../IMGS/vez.jpeg"
+import rihana from "../IMGS/rihana.jpeg"
+import daily2 from "../IMGS/daily2.jpeg"
+import daily3 from "../IMGS/daily3.jpeg"
+import daily4 from "../IMGS/daily 4.jpeg"
+import daily5 from "../IMGS/daily5.jpeg"
+import daily6 from "../IMGS/daily6.jpeg"
+
+import Radio1 from "../IMGS/radio.jpeg"
+import Radio2 from "../IMGS/radio2.jpeg"
+import Radio3 from "../IMGS/radio3.jpeg"
+import Radio4 from "../IMGS/radio4.jpeg"
+import Radio5 from "../IMGS/radio5.jpeg"
+import Radio6 from "../IMGS/radio6.jpeg"
+
 import summe from "../audio/random/i wanna be yours - dramatic violin interlude (1).mp3"
 import wanna from "../audio/random/Arctic Monkeys - I Wanna Be Yours (1).mp3"
 import beautiful from "../audio/random/David Kushner - Daylight (Official Music Video) (1).mp3"
@@ -37,6 +51,7 @@ import { Music } from "./mushome";
 import { useState } from "react";
 import AudioPlayer from "./audioPlayer";
 import { Footer } from "./footer";
+import { Seccion1 } from "./seccion1";
 
 
 export const MenuPrin = () => {
@@ -115,7 +130,30 @@ export const MenuPrin = () => {
 
     return (
         <div className="conteiner text-white">
-            <p className="mx-[2%] font-semibold text-3xl mb-3 text-white mt-20">Artistas Recomendados</p>
+             <p className="mx-[2%]  font-semibold text-2xl text-white ">For You</p>
+            <div className="mx-[1%] flex gap-2 justify-center">
+                <Slider className="sladerhome" {...settings}>
+                    <div  className="w-[100%] ">
+                        <Music src={rihana} art={"Rihanna, Lady Gaga, adele,"} art1={"Carlos y mas"} />
+                    </div>
+                    <div  className="w-[100%] ">
+                        <Music src={daily2} art={"Dario, Lana Del Rey"} art1={"Bat Bunny y mas"} />
+                    </div>
+                    <div  className="w-[100%] ">
+                        <Music src={daily3} art={"Castillas, Brack, Eren"} art1={"Lady Gaga y mas"} />
+                    </div>
+                    <div  className="w-[100%] ">
+                        <Music src={daily4} art={"Eminem, SZA, metro,"} art1={"Martha y mas"} />
+                    </div>
+                    <div  className="w-[100%] ">
+                        <Music src={daily5} art={"Dario, Lana Del Rey, marco"} art1={"CHIBITA y mas"} />
+                    </div>
+                    <div  className="w-[100%] ">
+                        <Music src={daily6} art={"Omar, Adale, The Weeknd"} art1={"Dairo y mas"} />
+                    </div>
+                </Slider>
+            </div>
+            <p className="mx-[2%] font-semibold text-2xl mb-3 text-white">Artistas Recomendados</p>
             <div className="CONT mx-[2%] flex gap-2 justify-center">
                 <Slider className="sladerhome" {...settings}>
                     <Link to={'/LanaDelRey'}>
@@ -138,7 +176,7 @@ export const MenuPrin = () => {
                     </Link>
                 </Slider>
             </div>
-            <p className="mx-[2%] mt-5 font-semibold text-3xl mb-3 text-white">Podria Gustarte...</p>
+            <p className="mx-[2%] mt-5 font-semibold text-2xl text-white">Podria Gustarte...</p>
             <div className="mx-[1%] flex gap-2 justify-center">
                 <Slider className="sladerhome " {...settings}>
                     <div onClick={() => toggleAudioPlayer(0)} className="w-[100%] ">
@@ -159,14 +197,14 @@ export const MenuPrin = () => {
                     <div onClick={() => toggleAudioPlayer(5)} className="w-[100%] ">
                         <Music names={names[11]} src={lue} art={art[5]} />
                     </div>
-                  
+
                 </Slider>
             </div>
-            <p className="mx-[2%] mt-8 font-semibold text-3xl mb-3 text-white ">Populares</p>
+            <p className="mx-[2%]  font-semibold text-2xl text-white ">Populares</p>
             <div className="mx-[1%] flex gap-2 justify-center">
                 <Slider className="sladerhome" {...settings}>
                     <div onClick={() => toggleAudioPlayer(6)} className="w-[100%] ">
-                        <Music names={names[6]} src={vio} art={art[0]} />
+                        <Music names={names[12]} src={vio} art={art[0]} />
                     </div>
                     <div onClick={() => toggleAudioPlayer(7)} className="w-[100%] ">
                         <Music names={names[13]} src={shaa} art={art[6]} />
@@ -185,9 +223,33 @@ export const MenuPrin = () => {
                     </div>
                 </Slider>
             </div>
+            <p className="mx-[2%]  font-semibold text-2xl text-white ">Emisoras Populares</p>
+            <div className="mx-[1%] flex gap-2 justify-center">
+                <Slider className="sladerhome" {...settings}>
+                    <div className="w-[100%] ">
+                        <Music src={Radio1} art={"con le andariego, joaquin"} art1={"Guiller,Dario y mas"} />
+                    </div>
+                    <div className="w-[100%] ">
+                        <Music src={Radio2} art={"con le andariego, joaquin"} art1={"Guiller,Dario y mas"} />
+                    </div>
+                    <div className="w-[100%] ">
+                        <Music src={Radio3} art={"con le andariego, joaquin"} art1={"Guiller,Dario y mas"} />
+                    </div>
+                    <div className="w-[100%] ">
+                        <Music src={Radio4} art={"con le andariego, joaquin"} art1={"Guiller,Dario y mas"} />
+                    </div>
+                    <div className="w-[100%] ">
+                        <Music src={Radio5} art={"con le andariego, joaquin"} art1={"Guiller,Dario y mas"} />
+                    </div>
+                    <div className="w-[100%] ">
+                        <Music src={Radio6} art={"con le andariego, joaquin"} art1={"Guiller,Dario y mas"} />
+                    </div>
+                </Slider>
+            </div>
+            
 
 
-            <div className="overflow-hidden fixed z-10 audicont">
+            <div className="overflow-hidden fixed z-10 audicont ">
                 {barraAudio === 0 && <AudioPlayer imgaudio={your} names={names[6]} audio={wanna} onEnded={handleEnded} />}
                 {barraAudio === 1 && <AudioPlayer imgaudio={dey} names={names[7]} audio={beautiful} onEnded={handleEnded} />}
                 {barraAudio === 2 && <AudioPlayer imgaudio={your} names={names[8]} audio={say} onEnded={handleEnded2} />}
@@ -201,8 +263,8 @@ export const MenuPrin = () => {
                 {barraAudio === 10 && <AudioPlayer imgaudio={me} names={names[16]} audio={feel} onEnded={handleEnded6} />}
                 {barraAudio === 11 && <AudioPlayer imgaudio={vez} names={names[17]} audio={rara} />}
             </div>
-            <Footer/>
-            
+            <Footer />
+
         </div>
     )
 }

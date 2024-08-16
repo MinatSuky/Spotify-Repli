@@ -87,7 +87,7 @@
     width: 86%;
 }
 .sladerhome {
-    width: 95%;
+    width: 98.5%;
 }
 
 .ney {
@@ -104,9 +104,13 @@
 
 .BARRAPRINCIPAL {
     width: 76.1%;
+
 }
 .BARRALATERAL{
-    width: 23%;
+    width: 22.2%;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    margin-left: 8px;
 }
 .hijo {
     margin-left: 23%;
@@ -115,10 +119,9 @@
 }
 
 .audicont {
-    width: 76.1%;
+    width: 98.7%;
     top: 90%;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    margin-left: -22.7%;
 }
 
 .audio-container {
@@ -192,6 +195,24 @@
   .fotodie{
     border-radius: 6px;
   }
+  .slick-arrow{
+    visibility: hidden;
+  }
+  .slick-dots{
+    visibility: hidden;
+  }
+  .seccion1{
+    min-height: 300px; --context-color: #7f1d1d;
+  }
+  /* Estilo inicial del fondo */
+  /* Estilo inicial del div contenedor */
+/* .bg-color {
+    transition: background 01s ease-in-out; 
+} */
+
+
+
+
 
 /* ---------------------------------------------@-QUERY---------------------------------------------------------------- */
 @media (max-width: 1117px) {
@@ -205,6 +226,7 @@
 
     .hijo {
         margin-left: 0;
+        margin-right: 0;
         width: 100%;
     }
 
@@ -224,6 +246,7 @@
         width: 100%;
         top: 82.9%;
         border-radius: 50px 50px 0 0;
+        margin-left: 0;
     }
 
     .audio-container {
@@ -311,4 +334,24 @@
         align-items: center;
         gap: 15px;
     }
+    ::-webkit-scrollbar {
+        display: none;
+      }
+      
+      /* Fondo de la scrollbar */
+      ::-webkit-scrollbar-track {
+        display: none;
+      }
+      
+      
+      /* Color y diseño de la scrollbar */
+      ::-webkit-scrollbar-thumb {
+        display: none;
+      }
+      
+      /* Estilo cuando la scrollbar está activa (hover) */
+      ::-webkit-scrollbar-thumb:hover {
+        display: none;
+      }
+  
 }

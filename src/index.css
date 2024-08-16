@@ -191,7 +191,9 @@ body{
 /* Estilo cuando la scrollbar está activa (hover) */
 ::-webkit-scrollbar-thumb:hover {
   background-color: #424141; /* Un verde más claro al pasar el ratón */
+
 }
+
 
 /* .slick-track{
   display: flex;

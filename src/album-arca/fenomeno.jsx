@@ -75,7 +75,7 @@ export const Fenomeno = () => {
                 <BarraLate />
             </div>
             <div className="h-[98.2vh] bg-[#121212] rounded-lg mt-2 overflow-auto hijo">
-            <BarraPrin />
+                <BarraPrin />
                 <div className="fotoborn5 gradi">
                     <div className="bg-[#76564F] portada p-8 ">
                         <div>
@@ -86,12 +86,12 @@ export const Fenomeno = () => {
                             <p className="text-white font-extrabold title-perfi2 ml-3">El Fenomeno</p>
                             <div className="text-white ml-3  mt-3 fechas2 gap-2">
                                 <div className="fechas3">
-                                <img className="rounded-full" src={arca} alt="" width={30} />
-                                <p className="text-xl font-bold">Arcangel</p>
+                                    <img className="rounded-full" src={arca} alt="" width={30} />
+                                    <p className="text-xl font-bold">Arcangel</p>
                                 </div>
                                 <div className="fechas">
-                                <p className="font-normal opacity-80 text-sm">2008</p>-
-                                <p className="font-normal opacity-80 text-sm">14 canciones, 1h 1 min 25 s</p>
+                                    <p className="font-normal opacity-80 text-sm">2008</p>-
+                                    <p className="font-normal opacity-80 text-sm">14 canciones, 1h 1 min 25 s</p>
                                 </div>
                             </div>
                         </div>
@@ -525,7 +525,7 @@ export const Fenomeno = () => {
                             <p className="opacity-60 ney">3:56</p>
                         </div>
                     </div>
-                    <Footer/>
+                    <Footer />
                 </div>
                 <div className="overflow-hidden fixed z-[1] audicont">
                     {barraAudio === 0 && <AudioPlayer imgaudio={imgaudio[0]} names={names[0]} audio={paque} onEnded={handleEnded} />}

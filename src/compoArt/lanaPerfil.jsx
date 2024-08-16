@@ -109,6 +109,25 @@ export const LanaPerfil = () => {
                 </div>
             </div>
             <div className="mt-10 ml-12 flex flex-col gap-3">
+            <div className="mt-7 cursor-default">
+                    <div className="flex justify-between opacity-70 mx-[1.7%]">
+                        <div className="flex gap-10">
+                            <p>#</p>
+                            <p>Titulo</p>
+                        </div>
+                        <div className="flex gap-52 mb-3">
+                            <p className=" repro">Reproduciones</p>
+                            <p>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" color="#ffffff" fill="none">
+                                    <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C7.52232 2 3.77426 4.94289 2.5 9H5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M12 8V12L14 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M2 12C2 12.3373 2.0152 12.6709 2.04494 13M9 22C8.6584 21.8876 8.32471 21.7564 8 21.6078M3.20939 17C3.01655 16.6284 2.84453 16.2433 2.69497 15.8462M4.83122 19.3065C5.1369 19.6358 5.46306 19.9441 5.80755 20.2292" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </p>
+                        </div>
+                    </div>
+                    <p className="flex justify-center opacity-20"><hr className="w-[100%]" /></p>
+                </div>
                 <div className="conn flex items-center justify-between p-3 rounded-lg hover:bg-[#1A1A1A] mr-[2%] hover:shadow-lg">
                     <div onClick={() => toggleAudioPlayer(0)} className="flex items-center repro4 cursor-pointer">
                         <p>1</p>
