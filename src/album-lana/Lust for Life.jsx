@@ -75,13 +75,13 @@ export const Lust = () => {
 
     return (
         <div className="padre flex gap-[3px]">
-            <div className="padre3 w-[23%] h-[100%] overflow-hidden  BARRALATERAL">
+            <div className="padre3 h-[100%] overflow-hidden  BARRALATERAL">
                 <BarraLate />
             </div>
             <div className="h-[98.2vh] bg-[#121212] rounded-lg mt-2 overflow-auto hijo">
             <BarraPrin />
                 <div className="fotoborn2 gradi ">
-                    <div className="bg-[#305157]  portada p-8 ">
+                    <div className="bg-[#385f66]  portada p-8 ">
                         <div>
                             <img className="fotodie" src="https://i.scdn.co/image/ab67616d0000b273427fc95e3e9d98803413864e" width={200} alt="" />
                         </div>

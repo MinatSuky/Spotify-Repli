@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Popap } from './popap';
 
@@ -28,7 +28,7 @@ export const BarraPrin = () => {
             <div className="flex ml-7 ">
                 <div className="flex justify-center gap-2 items-center cursor-pointer">
                     <svg
-                        className="REGRESAR bg-neutral-950 rounded-full"
+                        className="REGRESAR backdrop-blur-sm bg-black/50 hover:bg-neutral-950 rounded-full"
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 24 24"
                         width="30"
@@ -46,7 +46,7 @@ export const BarraPrin = () => {
                         />
                     </svg>
                     <svg
-                        className="VOLVER bg-neutral-950 rounded-full cursor-pointer"
+                        className="VOLVER backdrop-blur-sm bg-black/50 hover:bg-neutral-950 rounded-full cursor-pointer"
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 24 24"
                         width="30"
