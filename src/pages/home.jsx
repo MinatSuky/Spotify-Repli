@@ -83,10 +83,10 @@ export const Home = () => {
 
     return (
         <div className="padre flex gap-[3px]">
-            <div className="padre3 h-[100vh] overflow-hidden  BARRALATERAL">
+            <div className="padre3 h-[99%] overflow-hidden BARRALATERAL ">
                 <BarraLate />
             </div>
-            <div className="h-[98.1vh] rounded-lg mt-2 overflow-auto hijo bg-[#121212]">
+            <div className="h-[98.2vh] rounded-lg mt-2  overflow-auto hijo bg-[#121212]">
                 <BarraPrin />
                 <div  style={{
                 background: bgColor,

@@ -66,7 +66,7 @@ export const Born = () => {
 
     return (
         <div className="padre flex gap-[3px]">
-            <div className="padre3 h-[100%] overflow-hidden  BARRALATERAL">
+            <div className="padre3 h-[99%] overflow-hidden  BARRALATERAL">
                 <BarraLate />
             </div>
 

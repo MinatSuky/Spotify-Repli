@@ -1,32 +1,14 @@
 import { useState } from "react";
-import appFirebase from "../credenciales";
-import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
-
-const auth = getAuth(appFirebase);
+6
 
 export const Regis = () => {
-    const [registrando, setRegistrando] = useState(false);
-    const [mensaje, setMensaje] = useState("");
-
-    const autenticacion = async (e) => {
-        e.preventDefault();
-        const correo = e.target.email.value;
-        const pass = e.target.contra.value;
-
-        try {
-            if (registrando) {
-                await createUserWithEmailAndPassword(auth, correo, pass);
-            } else {
-                await signInWithEmailAndPassword(auth, correo, pass);
-            }
-        } catch (error) {
-            setMensaje("Contraseña o Correo Incorrectos");
-        }
-    };
 
     const regresar = () => {
         window.history.back();
     };
+
+
+
 
     return (
         <div className="bg-gradient-to-t from-black to-gray-900 h-[100vh] flex justify-center items-center">
@@ -52,30 +34,33 @@ export const Regis = () => {
                         RESGISTRATE 
                     </p>
                     <div className="">
-                        <form className="flex flex-col gap-4 mt-20" onSubmit={autenticacion}>
+                        <form onSubmit={inputSubmit} className="flex flex-col gap-4 mt-20">
                         <input
                                 className="py-3 px-2 bg-inherit border-b-2"
                                 type="text"
                                 placeholder="usuario"
-                                id="user"
+                                name="Name"
+                                onChange={inputChange}
                             />
                             <input
                                 className="py-3 px-2 bg-inherit border-b-2"
                                 type="text"
                                 placeholder="Email"
-                                id="email"
+                                name="Email"
+                                onChange={inputChange}
                             />
                             <input
                                 className="py-3 px-2 bg-inherit border-b-2"
                                 type="password"
                                 placeholder="Contraseña"
-                                id="contra"
+                                name="Pass"
+                                onChange={inputChange}
                             />
-                            <button className="mt-10 text-black hover:shadow-lg hover:shadow-cyan-500/50 duration-200 ease-in-out bg-white py-2 font-bold rounded hover:bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%">
+                            <button type="submit" className="mt-10 text-black hover:shadow-lg hover:shadow-cyan-500/50 duration-200 ease-in-out bg-white py-2 font-bold rounded hover:bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%">
                                comenzar
                             </button>
                         </form>
-                        <p className="mensaje text-red-500 text-center mt-5">{mensaje}</p>
+                        <p className="mensaje text-red-500 text-center mt-5"></p>
                     </div>
 
                 </div>

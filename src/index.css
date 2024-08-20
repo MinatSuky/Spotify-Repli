@@ -17,7 +17,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 body{
-  font-family: "Poppins", sans-serif;
+  font-family: "DM Sans", sans-serif;
 }
 .audio-container {
   display: flex;
@@ -169,6 +169,9 @@ body{
 }
 .shadow-1{
   box-shadow: 0px 8px 15px 0px #080808;
+}
+.shadow-2{
+  box-shadow: 0px 9px 18px 4px #080808;
 }
 /* Estilo general para la scrollbar */
 ::-webkit-scrollbar {

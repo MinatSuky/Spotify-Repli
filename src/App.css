@@ -87,7 +87,7 @@
     width: 86%;
 }
 .sladerhome {
-    width: 98.5%;
+    width: 95.5%;
 }
 
 .ney {
@@ -103,25 +103,25 @@
 
 
 .BARRAPRINCIPAL {
-    width: 76.1%;
+    width: 77.7%;
 
 }
 .BARRALATERAL{
-    width: 22.2%;
+    width: 20%;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
     margin-left: 8px;
 }
 .hijo {
-    margin-left: 23%;
+    margin-left: 21%;
     margin-right: 5px;
     width: 100%;
 }
 
 .audicont {
-    width: 98.7%;
+    width: 99.7%;
     top: 90%;
-    margin-left: -22.7%;
+    margin-left: -20.6%;
 }
 
 .audio-container {
@@ -351,6 +351,9 @@
       
       /* Estilo cuando la scrollbar está activa (hover) */
       ::-webkit-scrollbar-thumb:hover {
+        display: none;
+      }
+      .FLECH{
         display: none;
       }
   
