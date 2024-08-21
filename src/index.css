@@ -186,7 +186,7 @@ body{
 
 /* Color y diseño de la scrollbar */
 ::-webkit-scrollbar-thumb {
-  background-color: #2d2e2d; /* Color verde característico de Spotify */
+  background-color: #2d2e2d; /* Color */
   border-radius: 4px; /* Bordes redondeados */
   border: 2px solid #181818; /* Espacio alrededor de la barra */
 }

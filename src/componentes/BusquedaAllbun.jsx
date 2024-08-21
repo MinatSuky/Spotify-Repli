@@ -70,7 +70,7 @@ export const BusqAllbun = () => {
                         <div key={index}>
                             <div className="flex flex-col items-center w-[200px] relative group">
                                 <img className="rounded-lg" src={cancione.data.albumOfTrack.coverArt.sources[0].url} width={180} alt="foto" />
-                                <h3 className="text-center nanda mt-2 text-white">{cancione.data.name}</h3>
+                                <h3 className="text-start ml-8 nanda mt-2 text-white font-medium">{cancione.data.name}</h3>
                                 <h4 className="nanda opacity-75 text-start ml-8">{cancione.data.artists.items[0].profile.name}</h4>
                                 <div className="FLECH1 bg-[#23dc67] p-5 rounded-full absolute top-[150px] hover:scale-110 group-hover:top-[130px] right-2 ora1 w-fit opacity-0 group-hover:opacity-100 ease-in-out duration-300">
                                     <img className="w-5" src={icono ? (img1) : (img2)} alt="" width={20} />

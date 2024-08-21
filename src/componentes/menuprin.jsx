@@ -129,127 +129,129 @@ export const MenuPrin = () => {
 
 
     return (
-        <div className="conteiner text-white">
-             <p className="mx-[2%]  font-semibold text-2xl text-white ">For You</p>
-            <div className="mx-[1%] flex gap-2 justify-center">
-                <Slider className="sladerhome" {...settings}>
-                    <div  className="w-[100%] ">
-                        <Music src={rihana} art={"Rihanna, Lady Gaga, adele,"} art1={"Carlos y mas"} />
-                    </div>
-                    <div  className="w-[100%] ">
-                        <Music src={daily2} art={"Dario, Lana Del Rey"} art1={"Bat Bunny y mas"} />
-                    </div>
-                    <div  className="w-[100%] ">
-                        <Music src={daily3} art={"Castillas, Brack, Eren"} art1={"Lady Gaga y mas"} />
-                    </div>
-                    <div  className="w-[100%] ">
-                        <Music src={daily4} art={"Eminem, SZA, metro,"} art1={"Martha y mas"} />
-                    </div>
-                    <div  className="w-[100%] ">
-                        <Music src={daily5} art={"Dario, Lana Del Rey, marco"} art1={"CHIBITA y mas"} />
-                    </div>
-                    <div  className="w-[100%] ">
-                        <Music src={daily6} art={"Omar, Adale, The Weeknd"} art1={"Dairo y mas"} />
-                    </div>
-                </Slider>
-            </div>
-            <p className="mx-[2%] font-semibold text-2xl mb-3 text-white">Artistas Recomendados</p>
-            <div className="CONT mx-[2%] flex gap-2 justify-center">
-                <Slider className="sladerhome" {...settings}>
-                    <Link to={'/LanaDelRey'}>
-                        <Art names={names[0]} src={lanaR} />
-                    </Link>
-                    <Link to={'/Arcangel'}>
-                        <Art names={names[1]} src={arca} />
-                    </Link>
-                    <Link to={'/Batbonny'}>
-                        <Art names={names[4]} src={bat} />
-                    </Link>
-                    <Link to={'/Shakira'}>
-                        <Art names={names[5]} src={shak} />
-                    </Link>
-                    <Link to={'/Billie Eilish'}>
-                        <Art names={names[2]} src={bil} />
-                    </Link>
-                    <Link to={'/Theweeknd'}>
-                        <Art names={names[3]} src={the} />
-                    </Link>
-                </Slider>
-            </div>
-            <p className="mx-[2%] mt-5 font-semibold text-2xl text-white">Podria Gustarte...</p>
-            <div className="mx-[1%] flex gap-2 justify-center">
-                <Slider className="sladerhome " {...settings}>
-                    <div onClick={() => toggleAudioPlayer(0)} className="w-[100%] ">
-                        <Music names={names[6]} src={your} art={art[2]} />
-                    </div>
-                    <div onClick={() => toggleAudioPlayer(1)} className="w-[100%] ">
-                        <Music names={names[7]} src={dey} art={art[1]} />
-                    </div>
-                    <div onClick={() => toggleAudioPlayer(2)} className="w-[100%] ">
-                        <Music names={names[8]} src={your} art={art[2]} />
-                    </div>
-                    <div onClick={() => toggleAudioPlayer(3)} className="w-[100%] ">
-                        <Music names={names[9]} src={wey} art={art[3]} />
-                    </div>
-                    <div onClick={() => toggleAudioPlayer(4)} className="w-[100%] ">
-                        <Music names={names[10]} src={judas} art={art[4]} />
-                    </div>
-                    <div onClick={() => toggleAudioPlayer(5)} className="w-[100%] ">
-                        <Music names={names[11]} src={lue} art={art[5]} />
-                    </div>
+        <div className="conteiner flex flex-col text-white">
+            <div>
+                <p className="mx-[2%]  font-semibold text-2xl text-white ">For You</p>
+                <div className="mx-[1%] flex gap-2 justify-center">
+                    <Slider className="sladerhome" {...settings}>
+                        <div className="w-[100%] ">
+                            <Music src={rihana} art={"Rihanna, Lady Gaga, adele,"} art1={"Carlos y mas"} />
+                        </div>
+                        <div className="w-[100%] ">
+                            <Music src={daily2} art={"Dario, Lana Del Rey"} art1={"Bat Bunny y mas"} />
+                        </div>
+                        <div className="w-[100%] ">
+                            <Music src={daily3} art={"Castillas, Brack, Eren"} art1={"Lady Gaga y mas"} />
+                        </div>
+                        <div className="w-[100%] ">
+                            <Music src={daily4} art={"Eminem, SZA, metro,"} art1={"Martha y mas"} />
+                        </div>
+                        <div className="w-[100%] ">
+                            <Music src={daily5} art={"Dario, Lana Del Rey, marco"} art1={"CHIBITA y mas"} />
+                        </div>
+                        <div className="w-[100%] ">
+                            <Music src={daily6} art={"Omar, Adale, The Weeknd"} art1={"Dairo y mas"} />
+                        </div>
+                    </Slider>
+                </div>
+                <p className="mx-[2%] font-semibold text-2xl mb-3 text-white">Artistas Recomendados</p>
+                <div className="CONT mx-[2%] flex gap-2 justify-center">
+                    <Slider className="sladerhome" {...settings}>
+                        <Link to={'/LanaDelRey'}>
+                            <Art names={names[0]} src={lanaR} />
+                        </Link>
+                        <Link to={'/Arcangel'}>
+                            <Art names={names[1]} src={arca} />
+                        </Link>
+                        <Link to={'/Batbonny'}>
+                            <Art names={names[4]} src={bat} />
+                        </Link>
+                        <Link to={'/Shakira'}>
+                            <Art names={names[5]} src={shak} />
+                        </Link>
+                        <Link to={'/Billie Eilish'}>
+                            <Art names={names[2]} src={bil} />
+                        </Link>
+                        <Link to={'/Theweeknd'}>
+                            <Art names={names[3]} src={the} />
+                        </Link>
+                    </Slider>
+                </div>
+                <p className="mx-[2%] mt-5 font-semibold text-2xl text-white">Podria Gustarte...</p>
+                <div className="mx-[1%] flex gap-2 justify-center">
+                    <Slider className="sladerhome " {...settings}>
+                        <div onClick={() => toggleAudioPlayer(0)} className="w-[100%] ">
+                            <Music names={names[6]} src={your} art={art[2]} />
+                        </div>
+                        <div onClick={() => toggleAudioPlayer(1)} className="w-[100%] ">
+                            <Music names={names[7]} src={dey} art={art[1]} />
+                        </div>
+                        <div onClick={() => toggleAudioPlayer(2)} className="w-[100%] ">
+                            <Music names={names[8]} src={your} art={art[2]} />
+                        </div>
+                        <div onClick={() => toggleAudioPlayer(3)} className="w-[100%] ">
+                            <Music names={names[9]} src={wey} art={art[3]} />
+                        </div>
+                        <div onClick={() => toggleAudioPlayer(4)} className="w-[100%] ">
+                            <Music names={names[10]} src={judas} art={art[4]} />
+                        </div>
+                        <div onClick={() => toggleAudioPlayer(5)} className="w-[100%] ">
+                            <Music names={names[11]} src={lue} art={art[5]} />
+                        </div>
 
-                </Slider>
-            </div>
-            <p className="mx-[2%]  font-semibold text-2xl text-white ">Populares</p>
-            <div className="mx-[1%] flex gap-2 justify-center">
-                <Slider className="sladerhome" {...settings}>
-                    <div onClick={() => toggleAudioPlayer(6)} className="w-[100%] ">
-                        <Music names={names[12]} src={vio} art={art[0]} />
-                    </div>
-                    <div onClick={() => toggleAudioPlayer(7)} className="w-[100%] ">
-                        <Music names={names[13]} src={shaa} art={art[6]} />
-                    </div>
-                    <div onClick={() => toggleAudioPlayer(8)} className="w-[100%] ">
-                        <Music names={names[14]} src={yonaa} art={art[7]} />
-                    </div>
-                    <div onClick={() => toggleAudioPlayer(9)} className="w-[100%] ">
-                        <Music names={names[15]} src={mal} art={art[8]} />
-                    </div>
-                    <div onClick={() => toggleAudioPlayer(10)} className="w-[100%] ">
-                        <Music names={names[16]} src={me} art={art[9]} />
-                    </div>
-                    <div onClick={() => toggleAudioPlayer(11)} className="w-[100%] ">
-                        <Music names={names[17]} src={vez} art={art[10]} />
-                    </div>
-                </Slider>
-            </div>
-            <p className="mx-[2%]  font-semibold text-2xl text-white ">Emisoras Populares</p>
-            <div className="mx-[1%] flex gap-2 justify-center">
-                <Slider className="sladerhome" {...settings}>
-                    <div className="w-[100%] ">
-                        <Music src={Radio1} art={"con le andariego, joaquin"} art1={"Guiller,Dario y mas"} />
-                    </div>
-                    <div className="w-[100%] ">
-                        <Music src={Radio2} art={"con le andariego, joaquin"} art1={"Guiller,Dario y mas"} />
-                    </div>
-                    <div className="w-[100%] ">
-                        <Music src={Radio3} art={"con le andariego, joaquin"} art1={"Guiller,Dario y mas"} />
-                    </div>
-                    <div className="w-[100%] ">
-                        <Music src={Radio4} art={"con le andariego, joaquin"} art1={"Guiller,Dario y mas"} />
-                    </div>
-                    <div className="w-[100%] ">
-                        <Music src={Radio5} art={"con le andariego, joaquin"} art1={"Guiller,Dario y mas"} />
-                    </div>
-                    <div className="w-[100%] ">
-                        <Music src={Radio6} art={"con le andariego, joaquin"} art1={"Guiller,Dario y mas"} />
-                    </div>
-                </Slider>
-            </div>
-            
+                    </Slider>
+                </div>
+                <p className="mx-[2%]  font-semibold text-2xl text-white ">Populares</p>
+                <div className="mx-[1%] flex gap-2 justify-center">
+                    <Slider className="sladerhome" {...settings}>
+                        <div onClick={() => toggleAudioPlayer(6)} className="w-[100%] ">
+                            <Music names={names[12]} src={vio} art={art[0]} />
+                        </div>
+                        <div onClick={() => toggleAudioPlayer(7)} className="w-[100%] ">
+                            <Music names={names[13]} src={shaa} art={art[6]} />
+                        </div>
+                        <div onClick={() => toggleAudioPlayer(8)} className="w-[100%] ">
+                            <Music names={names[14]} src={yonaa} art={art[7]} />
+                        </div>
+                        <div onClick={() => toggleAudioPlayer(9)} className="w-[100%] ">
+                            <Music names={names[15]} src={mal} art={art[8]} />
+                        </div>
+                        <div onClick={() => toggleAudioPlayer(10)} className="w-[100%] ">
+                            <Music names={names[16]} src={me} art={art[9]} />
+                        </div>
+                        <div onClick={() => toggleAudioPlayer(11)} className="w-[100%] ">
+                            <Music names={names[17]} src={vez} art={art[10]} />
+                        </div>
+                    </Slider>
+                </div>
+                <p className="mx-[2%]  font-semibold text-2xl text-white ">Emisoras Populares</p>
+                <div className="mx-[1%] flex gap-2 justify-center">
+                    <Slider className="sladerhome" {...settings}>
+                        <div className="w-[100%] ">
+                            <Music src={Radio1} art={"con le andariego, joaquin"} art1={"Guiller,Dario y mas"} />
+                        </div>
+                        <div className="w-[100%] ">
+                            <Music src={Radio2} art={"con le andariego, joaquin"} art1={"Guiller,Dario y mas"} />
+                        </div>
+                        <div className="w-[100%] ">
+                            <Music src={Radio3} art={"con le andariego, joaquin"} art1={"Guiller,Dario y mas"} />
+                        </div>
+                        <div className="w-[100%] ">
+                            <Music src={Radio4} art={"con le andariego, joaquin"} art1={"Guiller,Dario y mas"} />
+                        </div>
+                        <div className="w-[100%] ">
+                            <Music src={Radio5} art={"con le andariego, joaquin"} art1={"Guiller,Dario y mas"} />
+                        </div>
+                        <div className="w-[100%] ">
+                            <Music src={Radio6} art={"con le andariego, joaquin"} art1={"Guiller,Dario y mas"} />
+                        </div>
+                    </Slider>
+                </div>
 
+                <Footer />
+            </div>
 
-            <div className="overflow-hidden fixed z-10 audicont ">
+            <div className="overflow-hidden fixed z-20 audicont">
                 {barraAudio === 0 && <AudioPlayer imgaudio={your} names={names[6]} audio={wanna} onEnded={handleEnded} />}
                 {barraAudio === 1 && <AudioPlayer imgaudio={dey} names={names[7]} audio={beautiful} onEnded={handleEnded} />}
                 {barraAudio === 2 && <AudioPlayer imgaudio={your} names={names[8]} audio={say} onEnded={handleEnded2} />}
@@ -263,7 +265,7 @@ export const MenuPrin = () => {
                 {barraAudio === 10 && <AudioPlayer imgaudio={me} names={names[16]} audio={feel} onEnded={handleEnded6} />}
                 {barraAudio === 11 && <AudioPlayer imgaudio={vez} names={names[17]} audio={rara} />}
             </div>
-            <Footer />
+
 
         </div>
     )
