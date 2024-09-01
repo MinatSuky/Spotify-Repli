@@ -1,5 +1,8 @@
 
 import { Link } from "react-router-dom"
+import img from "../IMGS/batperfil.jpeg"
+import img1 from "../IMGS/dey.jpeg"
+import img2 from "../IMGS/your.jpeg"
 
 
 export const Popap = ({ negacion }) => {
@@ -9,14 +12,14 @@ export const Popap = ({ negacion }) => {
 
     return (
         <div onClick={negacion} className="absolute flex justify-end items-center right-[1px] w-[200vh] h-[100vh] z-30 bg-black/70">
-            <div className="cont1 bg-[#121212] rounded-tl-3xl w-[20vh] h-[100vh] ">
+            <div className="cont1 bg-[#121212] rounded-tl-3xl w-[40vh] h-[100vh] ">
                 <div className="flex justify-center gap-[2px]  items-center mx-3 mt-3 cursor-default">
                     <svg viewBox="0 0 256 256" width="30" height="30" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid"><path d="M128 0C57.308 0 0 57.309 0 128c0 70.696 57.309 128 128 128 70.697 0 128-57.304 128-128C256 57.314 198.697.007 127.998.007l.001-.006Zm58.699 184.614c-2.293 3.76-7.215 4.952-10.975 2.644-30.053-18.357-67.885-22.515-112.44-12.335a7.981 7.981 0 0 1-9.552-6.007 7.968 7.968 0 0 1 6-9.553c48.76-11.14 90.583-6.344 124.323 14.276 3.76 2.308 4.952 7.215 2.644 10.975Zm15.667-34.853c-2.89 4.695-9.034 6.178-13.726 3.289-34.406-21.148-86.853-27.273-127.548-14.92-5.278 1.594-10.852-1.38-12.454-6.649-1.59-5.278 1.386-10.842 6.655-12.446 46.485-14.106 104.275-7.273 143.787 17.007 4.692 2.89 6.175 9.034 3.286 13.72v-.001Zm1.345-36.293C162.457 88.964 94.394 86.71 55.007 98.666c-6.325 1.918-13.014-1.653-14.93-7.978-1.917-6.328 1.65-13.012 7.98-14.935C93.27 62.027 168.434 64.68 215.929 92.876c5.702 3.376 7.566 10.724 4.188 16.405-3.362 5.69-10.73 7.565-16.4 4.187h-.006Z" fill="#1ED760" /></svg>
                     <p className="text-white text-lg font-semibold">Spotify</p>
                 </div>
 
                 <Link to={"/"}>
-                    <div className="flex justify-start gap-2 mt-5 mx-3 bg-[#1A1A1A] py-3 rounded-md">                       
+                    <div className="flex justify-start gap-2 mt-5 mx-3 bg-[#1A1A1A] py-3 rounded-md">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="35" height="25" color="#ffffff" fill="none">
                             <path d="M10 18L14 18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                             <path d="M2.35139 13.2135C1.99837 10.9162 1.82186 9.76763 2.25617 8.74938C2.69047 7.73112 3.65403 7.03443 5.58114 5.64106L7.02099 4.6C9.41829 2.86667 10.6169 2 12 2C13.3831 2 14.5817 2.86667 16.979 4.6L18.4189 5.64106C20.346 7.03443 21.3095 7.73112 21.7438 8.74938C22.1781 9.76763 22.0016 10.9162 21.6486 13.2135L21.3476 15.1724C20.8471 18.4289 20.5969 20.0572 19.429 21.0286C18.2611 22 16.5537 22 13.1388 22H10.8612C7.44633 22 5.73891 22 4.571 21.0286C3.40309 20.0572 3.15287 18.4289 2.65243 15.1724L2.35139 13.2135Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
@@ -47,12 +50,37 @@ export const Popap = ({ negacion }) => {
                         <path d="M4 12H20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
                 </div>
-                <div className="carta bg-[#1A1A1A] py-5 px-2 rounded-lg mx-3 mt-3">
-                        <p className="text-[14px] font-semibold">Crea tu primera lista</p>
-                        <p className="text-[12px] mt-3">Es muy facil, y te charemos una mano.</p>
-                        <button className="bg-white mt-2 cans text-black py-[5px] px-6 rounded-full font-semibold duration-200 transition ease-in-out hover:bg-green-500 hover:shadow-lg hover:shadow-green-500/50">Crear lista</button>
+                <div className="flex gap-4 mt-1 hover:bg-[#222222] group p-2">
+                    <div className="flex justify-center items-center cursor-pointer">
+                        <svg className="absolute opacity-0 group-hover:opacity-100 z-10" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path fill="white" d="M8 5.14v14l11-7z" /></svg>
+                        <img className="shadow-lg group-hover:opacity-70 rounded-full" src={img} alt="foto" width={50} />
                     </div>
-                    <Link className="flex justify-center" to={'/login'}>
+                    <div className="">
+                        <p className="text-white text-[15px] cursor-default">Bat Bunny</p>
+                        <p className="opacity-70 text-sm cursor-default">Artista</p>
+                    </div>
+                </div>
+                <div className="flex gap-4 mt-1 hover:bg-[#222222] group p-2">
+                    <div className="flex justify-center items-center cursor-pointer">
+                        <svg className="absolute opacity-0 group-hover:opacity-100 z-10" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path fill="white" d="M8 5.14v14l11-7z" /></svg>
+                        <img className="shadow-lg group-hover:opacity-70 rounded-full" src={img1} alt="foto" width={50} />
+                    </div>
+                    <div className="">
+                        <p className="text-white text-[15px] cursor-default">DayLigth</p>
+                        <p className="opacity-70 text-sm cursor-default">David Kushner</p>
+                    </div>
+                </div>
+                <div className="flex gap-4 mt-1 hover:bg-[#222222] group p-2">
+                    <div className="flex justify-center items-center cursor-pointer">
+                        <svg className="absolute opacity-0 group-hover:opacity-100 z-10" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path fill="white" d="M8 5.14v14l11-7z" /></svg>
+                        <img className="shadow-lg group-hover:opacity-70 rounded-full" src={img2} alt="foto" width={50} />
+                    </div>
+                    <div className="">
+                        <p className="text-white text-[15px] cursor-default">I Wanna Be Your</p>
+                        <p className="opacity-70 text-sm cursor-default">Arctic Monkeys</p>
+                    </div>
+                </div>
+                <Link className="flex justify-center" to={'/login'}>
                     <button className="bg-neutral-900 py-2 px-5 font-bold rounded-full ney  mt-3">Registrate</button>
                 </Link>
             </div>

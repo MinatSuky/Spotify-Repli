@@ -15,7 +15,7 @@ export const BarraLate = () => {
             <div className="cont1 my-2  bg-[#121212] py-2 rounded-lg pb-3">
                 <Link to={"/"}>
                     <div className="flex items-center gap-3 cursor-pointer group ml-1 py-2 px-4 w-[50%] rounded-lg">
-                        <svg className="opacity-60 group-hover:opacity-100 duration-200" xmlns="http://www.w3.org/2000/svg" width="24" height="30" viewBox="0 0 36 36"><path  fill="#ffffff" d="m33.71 17.29l-15-15a1 1 0 0 0-1.41 0l-15 15a1 1 0 0 0 1.41 1.41L18 4.41l14.29 14.3a1 1 0 0 0 1.41-1.41Z" class="clr-i-outline clr-i-outline-path-1" /><path fill="#ffffff" d="M28 32h-5V22H13v10H8V18l-2 2v12a2 2 0 0 0 2 2h7V24h6v10h7a2 2 0 0 0 2-2V19.76l-2-2Z" class="clr-i-outline clr-i-outline-path-2" /><path fill="none" d="M0 0h36v36H0z" /></svg>
+                        <svg className="opacity-60 group-hover:opacity-100 duration-200" xmlns="http://www.w3.org/2000/svg" width="24" height="30" viewBox="0 0 36 36"><path fill="#ffffff" d="m33.71 17.29l-15-15a1 1 0 0 0-1.41 0l-15 15a1 1 0 0 0 1.41 1.41L18 4.41l14.29 14.3a1 1 0 0 0 1.41-1.41Z" class="clr-i-outline clr-i-outline-path-1" /><path fill="#ffffff" d="M28 32h-5V22H13v10H8V18l-2 2v12a2 2 0 0 0 2 2h7V24h6v10h7a2 2 0 0 0 2-2V19.76l-2-2Z" class="clr-i-outline clr-i-outline-path-2" /><path fill="none" d="M0 0h36v36H0z" /></svg>
                         <p className="font-semibold text-[#BEBEBE] group-hover:text-gray-100 duration-200 text-[16px]">Inicio</p>
                     </div>
                 </Link>
@@ -54,14 +54,14 @@ export const BarraLate = () => {
                         <svg className="opacity-60 hover:opacity-80 cursor-pointer hover:bg-[#202020] rounded-full p-2" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 20 20"><path fill="#ffffff" fill-rule="evenodd" d="M9 3.5a5.5 5.5 0 1 0 0 11a5.5 5.5 0 0 0 0-11M2 9a7 7 0 1 1 12.452 4.391l3.328 3.329a.75.75 0 1 1-1.06 1.06l-3.329-3.328A7 7 0 0 1 2 9" clip-rule="evenodd" /></svg>
                         <p className="flex items-center gap-1 text-white opacity-80 hover:scale-105 duration-100  text-sm cursor-pointer">Reciente <span className="opacity-80"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 56 56"><path fill="#ffffff" fill-rule="evenodd" d="M10 36a3 3 0 1 1 0 6a3 3 0 0 1 0-6m35.998 1c1.106 0 2.002.888 2.002 2c0 1.105-.89 2-2.002 2H18.002A1.996 1.996 0 0 1 16 39c0-1.105.89-2 2.002-2zM10 26a3 3 0 1 1 0 6a3 3 0 0 1 0-6m35.998 1c1.106 0 2.002.888 2.002 2c0 1.105-.89 2-2.002 2H18.002A1.996 1.996 0 0 1 16 29c0-1.105.89-2 2.002-2zM10 16a3 3 0 1 1 0 6a3 3 0 0 1 0-6m35.998 1c1.106 0 2.002.888 2.002 2c0 1.105-.89 2-2.002 2H18.002A1.996 1.996 0 0 1 16 19c0-1.105.89-2 2.002-2z" /></svg></span></p>
                     </div>
-                    <div className="flex gap-4 mt-4 hover:bg-[#222222] group cursor-pointer p-2 ml-[-10px] mr-[-7px] rounded-[5px]">
-                    <div className="flex justify-center items-center">
+                    <div className="flex gap-4 mt-4 hover:bg-[#222222] group  p-2 ml-[-10px] mr-[-7px] rounded-[5px]">
+                        <div className="flex justify-center items-center cursor-pointer">
                             <svg className="absolute opacity-0 group-hover:opacity-100 z-10" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path fill="white" d="M8 5.14v14l11-7z" /></svg>
                             <img className="shadow-lg group-hover:opacity-70 rounded-full" src={img} alt="foto" width={50} />
                         </div>
                         <div className="">
-                            <p className="text-white text-[15px]">Bat Bunny</p>
-                            <p className="opacity-70 text-sm">Artista</p>
+                            <p className="text-white text-[15px] cursor-default">Bat Bunny</p>
+                            <p className="opacity-70 text-sm cursor-default">Artista</p>
                         </div>
                     </div>
                     <div className="flex gap-4 mt-1 hover:bg-[#222222] group cursor-pointer p-2 ml-[-10px] mr-[-7px] rounded-[5px]">
@@ -81,7 +81,7 @@ export const BarraLate = () => {
                         </div>
                         <div className="">
                             <p className="text-white text-[15px]">I Wanna Be Your</p>
-                            <p className="opacity-70 text-sm">David Kushner</p>
+                            <p className="opacity-70 text-sm">Arctic Monkeys</p>
                         </div>
                     </div>
                 </div>
