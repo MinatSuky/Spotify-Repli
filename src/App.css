@@ -4,6 +4,12 @@
     overflow: hidden;
     text-overflow: ellipsis;
 }
+.nanda1 {
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 
 .gojo {
     border: solid red 3px;
@@ -219,6 +225,15 @@
     .BARRALATERAL {
         width: 0;
     }
+    .nanda1 {
+        white-space: wrap;
+        width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .artt{
+        display: none;
+    }
 
     .padre3 {
         display: none;
@@ -244,21 +259,18 @@
 
     .audicont {
         width: 100%;
-        top: 82.9%;
-        border-radius: 50px 50px 0 0;
+        top: 85.9%;
+        border-radius: 10px 10px 0 0;
         margin-left: 0;
     }
 
     .audio-container {
         padding-bottom: 30px;
+
     }
     .progress-container{
-        display: flex;
         flex-direction: column;
-        width: 100%;
-    }
-    .audio-controls{
-        flex-direction: column;
+
     }
     
     .voll {

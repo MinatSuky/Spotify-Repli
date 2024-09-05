@@ -185,7 +185,7 @@ export const Home = () => {
                        
                         
                        <a
-                                href="#2"
+                                href="#4"
                                 className="playlist-item2 mt-5 flex group relative transition-all duration-300 overflow-hidden items-center gap-5 rounded-md shadow-lg hover:shadow-xl outline-none bg-zinc-500/30 hover:bg-zinc-500/50 focus:bg-zinc-500/50"
                                 data-color="#14792d"
                                 

@@ -15,13 +15,13 @@ export const BarraLate = () => {
             <div className="cont1 my-2  bg-[#121212] py-2 rounded-lg pb-3">
                 <Link to={"/"}>
                     <div className="flex items-center gap-3 cursor-pointer group ml-1 py-2 px-4 w-[50%] rounded-lg">
-                        <svg className="opacity-60 group-hover:opacity-100 duration-200" xmlns="http://www.w3.org/2000/svg" width="24" height="30" viewBox="0 0 36 36"><path fill="#ffffff" d="m33.71 17.29l-15-15a1 1 0 0 0-1.41 0l-15 15a1 1 0 0 0 1.41 1.41L18 4.41l14.29 14.3a1 1 0 0 0 1.41-1.41Z" class="clr-i-outline clr-i-outline-path-1" /><path fill="#ffffff" d="M28 32h-5V22H13v10H8V18l-2 2v12a2 2 0 0 0 2 2h7V24h6v10h7a2 2 0 0 0 2-2V19.76l-2-2Z" class="clr-i-outline clr-i-outline-path-2" /><path fill="none" d="M0 0h36v36H0z" /></svg>
+                    <svg className="opacity-60 group-hover:opacity-100 duration-200" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 750 840"><path fill="#ffffff" d="M733 289q8 6 8 18v406q0 10-6 16t-17 7H487q-10 0-17-7t-7-16V458q0-10-6-17t-17-6H301q-10 0-16 6t-7 17v255q0 10-6 16t-17 7H23q-10 0-16-7t-7-16V307q0-12 9-18L356 7q15-12 29 0z"/></svg>
                         <p className="font-semibold text-[#BEBEBE] group-hover:text-gray-100 duration-200 text-[16px]">Inicio</p>
                     </div>
                 </Link>
                 <Link to={'/allbum'} >
-                    <div className="mt-1 flex items-center gap-3 cursor-pointer group ml-1 py-1 px-4 duration-200 w-[50%] rounded-lg">
-                        <svg className="opacity-60 group-hover:opacity-100 duration-200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="30" color="#ffffff" fill="none">
+                    <div className="mt-3 flex items-center gap-3 cursor-pointer group ml-1 py-1 px-4 duration-200 w-[50%] rounded-lg">
+                        <svg className="opacity-60 group-hover:opacity-100 duration-200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" color="#ffffff" fill="none">
                             <path d="M17.5 17.5L22 22" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
                             <path d="M20 11C20 6.02944 15.9706 2 11 2C6.02944 2 2 6.02944 2 11C2 15.9706 6.02944 20 11 20C15.9706 20 20 15.9706 20 11Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
                         </svg>
