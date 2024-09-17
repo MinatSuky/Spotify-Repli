@@ -126,7 +126,7 @@
 
 .audicont {
     width: 99.7%;
-    top: 90%;
+    top: 88%;
     margin-left: -20.6%;
 }
 
@@ -270,9 +270,11 @@
     }
     .progress-container{
         flex-direction: column;
-
+        
     }
-    
+    .img-1{
+        width: 20%;
+    }
     .voll {
         display: none;
     }
